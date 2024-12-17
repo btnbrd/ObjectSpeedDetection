@@ -45,7 +45,7 @@ if uploaded_video is not None:
             break
 
         # YOLO Detection
-        results = model.track(frame, tracker=trackers[1], conf=0.6, iou=0.5)
+        results = model.track(frame, tracker=trackers[1], conf=0.6, iou=0.5, persist=True)
 
         # Annotate frame
         annotated_frame = results[0].plot()
