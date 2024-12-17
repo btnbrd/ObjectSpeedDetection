@@ -88,3 +88,18 @@ Better finetune model
 Improve OCR accuracy under low light and motion blur conditions.
 
 
+
+# Installation
+
+```
+docker run --rm -it  \
+           --gpus all  \
+           -p 8888:8888  \
+           -v "$(pwd)/src:/app"  \
+           tracker_proj
+           
+```
+
+```
+streamlit run streamlit_app.py --server.port 8888
+```
