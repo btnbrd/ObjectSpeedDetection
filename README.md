@@ -101,5 +101,5 @@ docker run --rm -it  \
 ```
 
 ```
-streamlit run streamlit_app.py --server.port 8888
+streamlit run main.py --server.port 8888
 ```
