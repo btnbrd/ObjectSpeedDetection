@@ -67,4 +67,4 @@ if uploaded_video is not None:
     st.success("Processing complete!")
     st.video(output_path)
 else:
-    st.warning("Please upload a video file to start processing.")/home/maly/dev/sk/track_cv/tr/tr/best.pt
+    st.warning("Please upload a video file to start processing.")
