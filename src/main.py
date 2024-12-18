@@ -45,7 +45,7 @@ if uploaded_video is not None:
             break
 
         # YOLO Detection
-        results = model.track(frame, tracker=trackers[1], conf=0.6, iou=0.5)
+        results = model.track(frame, tracker=trackers[1], conf=0.6, iou=0.5, persist=True)
 
         # Annotate frame
         annotated_frame = results[0].plot()
@@ -67,4 +67,4 @@ if uploaded_video is not None:
     st.success("Processing complete!")
     st.video(output_path)
 else:
-    st.warning("Please upload a video file to start processing.")/home/maly/dev/sk/track_cv/tr/tr/best.pt
+    st.warning("Please upload a video file to start processing.")

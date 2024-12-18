@@ -94,6 +94,10 @@ Improve OCR accuracy under low light and motion blur conditions.
 docker build -t tracker_proj .
 ```
 ```
+docker build -t tracker_proj .
+```
+
+```
 docker run --rm -it  \
            --gpus all  \
            -p 8888:8888  \
@@ -103,5 +107,5 @@ docker run --rm -it  \
 ```
 
 ```
-streamlit run streamlit_app.py --server.port 8888
+streamlit run main.py --server.port 8888
 ```
