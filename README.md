@@ -90,7 +90,9 @@ Improve OCR accuracy under low light and motion blur conditions.
 
 
 # Installation
-
+```
+docker build -t tracker_proj .
+```
 ```
 docker run --rm -it  \
            --gpus all  \
